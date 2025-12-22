@@ -1,0 +1,47 @@
+[2025-12-22 15:04:35,912: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-12-22 15:04:35,913: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-12-22 15:04:35,914: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 15:04:35,914: INFO: common: created directory at: artifacts]
+[2025-12-22 15:04:35,914: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-22 15:04:37,289: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B77A:3101AF:165729:1AFE82:6949A451
+Accept-Ranges: bytes
+Date: Mon, 22 Dec 2025 20:04:36 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bos4666-BOS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1766433876.333401,VS0,VE336
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: af397450217279b4f5fa74d97b4d7d02fd3a1d38
+Expires: Mon, 22 Dec 2025 20:09:36 GMT
+Source-Age: 0
+
+]
+[2025-12-22 15:04:37,380: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-12-22 15:04:37,380: INFO: main: *******************]
+[2025-12-22 15:04:37,380: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-12-22 15:04:37,381: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-12-22 15:04:37,381: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-12-22 15:04:37,381: INFO: common: created directory at: artifacts]
+[2025-12-22 15:04:37,382: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-12-22 15:04:37,595: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-22 15:04:37,633: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2025-12-22 15:04:37,634: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2025-12-22 15:04:37,674: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]

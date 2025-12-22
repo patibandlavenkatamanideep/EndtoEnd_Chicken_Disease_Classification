@@ -4,22 +4,407 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="Requirements added">
-      <change afterPath="$PROJECT_DIR$/params.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/research/01_data_ingestion.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/entity/config_entity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/pipeline/stage_01_data_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/utils/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/End to End Chicken Disease Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/End to End Chicken Disease Classification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="Data Ingestion Completed">
+      <change afterPath="$PROJECT_DIR$/research/02_prepare_base_model.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/components/prepare_base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/pipeline/stage_02_prepare_base_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.142.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.165.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.172.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.176.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.184.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.190.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.192.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Coccidiosis/cocci.99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.142.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.165.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.172.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.176.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.184.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.190.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.192.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/Chicken-fecal-images/Healthy/healthy.99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/data_ingestion/data.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/running_logs.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parms.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/components/data_ingestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/research/trails.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/research/trails.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cnnClassifier/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/params.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cnnClassifier/config/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/config/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cnnClassifier/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/constants/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.py" beforeDir="false" afterPath="$PROJECT_DIR$/template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cnnClassifier/entity/config_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/entity/config_entity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +421,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -112,12 +498,29 @@
       <option name="project" value="LOCAL" />
       <updated>1766426723414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Data Ingestion Completed">
+      <option name="closed" value="true" />
+      <created>1766432831144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766432831144</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Data Ingestion Completed">
+      <option name="closed" value="true" />
+      <created>1766432853173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766432853173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="file directory added" />
     <MESSAGE value="Requirements added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Requirements added" />
+    <MESSAGE value="Data Ingestion Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Ingestion Completed" />
   </component>
 </project>
