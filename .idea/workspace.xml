@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="dvc added">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/components/predict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cnnClassifier/pipeline/predict.py" afterDir="false" />
+    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="user app and prediction added successfully">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/running_logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/running_logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cnnClassifier/pipeline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cnnClassifier/pipeline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766485788941</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="user app and prediction added successfully">
+      <option name="closed" value="true" />
+      <created>1766497772677</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1766497772677</updated>
+    </task>
+    <task id="LOCAL-00014" summary="user app and prediction added successfully">
+      <option name="closed" value="true" />
+      <created>1766497780087</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1766497780087</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +200,7 @@
     <MESSAGE value="Prepare Callbacks added" />
     <MESSAGE value="Training added" />
     <MESSAGE value="dvc added" />
-    <option name="LAST_COMMIT_MESSAGE" value="dvc added" />
+    <MESSAGE value="user app and prediction added successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="user app and prediction added successfully" />
   </component>
 </project>
