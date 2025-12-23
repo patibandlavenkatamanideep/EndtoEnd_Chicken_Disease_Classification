@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="CICD added" />
+    <list default="true" id="6d69cb2c-b3a2-4ca5-b3cd-63701e4d966f" name="Changes" comment="CICD added">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766500139910</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CICD added">
+      <option name="closed" value="true" />
+      <created>1766500247280</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1766500247280</updated>
+    </task>
+    <task id="LOCAL-00018" summary="CICD added">
+      <option name="closed" value="true" />
+      <created>1766500387151</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1766500387151</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
